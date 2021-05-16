@@ -11,6 +11,9 @@ Grupo 7: Proyecto 7enscan
 
 7enscan es una aplicación web que permite subir documentación relacionada con contratos de arriendos de viviendas y automóviles. Creado por alumnos de la UNAB para la empresa Patagonia Soft.
 
+Ruta de trabajo:
+https://trello.com/invite/b/RAxjb5h9/e6929358ff961fbdcbbc049d31c9b475/proyecto-7enscan (Se debe solicitar acceso)
+
 Integrantes:
 
 - Tomás Edwards
