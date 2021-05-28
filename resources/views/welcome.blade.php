@@ -17,6 +17,10 @@
 
 
   <style>
+    .imgLogo {
+      width: 10%
+    }
+
     .bd-placeholder-img {
       font-size: 1.125rem;
       text-anchor: middle;
@@ -109,24 +113,19 @@
 
 <body>
 
-  <header class="site-header sticky-top py-1">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Logo</a>
+        <a class="navbar-brand" href="#"><img src="img/Logo_Marca_real.png" alt="" class="imgLogo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNav">
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <button type="button" class="btn btn-primary btn-success p-3">Ingresa aqui</button>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Caracteristicas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Ingresar</a>
-            </li>
+
           </ul>
         </div>
       </div>
@@ -142,24 +141,22 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-          <img src="Screenshot_1.png" class="d-block w-100" alt="...">
+          <img src="img/logoarre.png" class="d-block w-50  mx-auto" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>YA LLEGAMOS!</h5>
-            <p>La mejor alternativa para tu empresa</p>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="Digitalización.png" class="d-block w-100" alt="...">
+          <img src="img/Digitalización.png" class="d-block w-50  mx-auto" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>A SOLO UN CLICK!</h5>
-            <p>Asi de facil sera acceder a tus documentos</p>
+            <h5 class="text-white">A SOLO UN CLICK!</h5>
+            <p class="text-white">Asi de facil sera acceder a tus documentos</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="seguridad-informatica-ciberseguridad-unir-mexico.jpg" class="d-block w-100" alt="...">
+          <img src="img/Seguridad.png" class="d-block w-50  mx-auto" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>CON LA MAXIMA SEGURIDAD!</h5>
-            <p>Ofrecemos los mas altos estandares de seguridad para tus documentos</p>
+            <h5 class="text-white">CON LA MAXIMA SEGURIDAD!</h5>
+            <p class="text-white">Ofrecemos los mas altos estandares de seguridad para tus documentos</p>
           </div>
         </div>
       </div>
@@ -173,162 +170,96 @@
       </button>
     </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-      <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Puedes almacenar tus contratos</h2>
-          <p class="lead">Ya no necesitarás andar con una carpeta en tu bolso.</p>
-          <div class="bg-light shadow-sm mx-auto" style="width: 50%; height: 300px; border-radius: 21px 21px 0 0;">
-            <img src="/images/doc1.png" class="img-fluid" alt="Documentos" style="margin-top:15px">
+    <div class="container my-4">
+      <div class="row d-flex ">
+        <div class="col-6 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="img/imagen1.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <p class="card-text">
+              <h4>Puedes almacenar tus contratos</h4>
+              <hr>
+              <p>Ya no necesitarás andar con una carpeta en tu bolso.</p>
+              </p>
+            </div>
+
           </div>
         </div>
+        <div class="col-6 d-flex justify-content-center">
+          <div class="card" style="width: 18rem;">
 
-      </div>
-      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Seguridad</h2>
-          <p class="lead">Tus documentos quedarán protegidos para que nadie más los vea.</p>
+            <div class="card-body">
+              <p class="card-text">
+              <h4>Seguridad</h4>
+              <hr>
+              <p>Tus documentos quedarán protegidos para que nadie más los vea.</p>
+              </p>
+            </div>
+            <img src="img/imagen2.jpg" class="card-img-top img-fluid" alt="...">
+          </div>
         </div>
-        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-          <img src="/images/lock.png" class="img-fluid" alt="Protegido" style="width: 25%;margin-top:20px">
-        </div>
       </div>
+
     </div>
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/imagen1.jpg" alt="..." class="img-fluid">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Puedes almacenar tus contratos</h5>
+                  <p class="card-text">Ya no necesitarás andar con una carpeta en tu bolso.</p>
 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 d-flex">
+                <img src="img/imagen2.jpg" alt="..." class="img-fluid">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Seguridad</h5>
+                  <p class="card-text">Tus documentos quedarán protegidos para que nadie más los vea.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
 
     <!-- Footer -->
     <footer class="bg-dark text-center text-white">
       <!-- Grid container -->
       <div class="container p-4">
-        <!-- Section: Social media -->
-        <section class="mb-4">
-          <!-- Facebook -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
 
-          <!-- Twitter -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-
-          <!-- Google -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
-
-          <!-- Instagram -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-
-          <!-- Linkedin -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-
-          <!-- Github -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
-        </section>
-        <!-- Section: Social media -->
 
         <!-- Section: Text -->
         <section class="mb-4">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-            repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-            eum harum corrupti dicta, aliquam sequi voluptate quas.
+            7enscan es una aplicación web que permite subir documentación relacionada con contratos de arriendos de
+            viviendas y automóviles. Creado por alumnos de la UNAB para la empresa Patagonia Soft.
           </p>
         </section>
         <!-- Section: Text -->
 
-        <!-- Section: Links -->
-        <section class="">
-          <!--Grid row-->
-          <div class="row">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
 
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#!" class="text-white">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#!" class="text-white">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#!" class="text-white">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="#!" class="text-white">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!" class="text-white">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-          </div>
-          <!--Grid row-->
-        </section>
-        <!-- Section: Links -->
       </div>
       <!-- Grid container -->
 
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
+        © 2021 Copyright:
         <a class="text-white" href="#">7enScan</a>
       </div>
       <!-- Copyright -->
