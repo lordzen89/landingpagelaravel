@@ -21,6 +21,15 @@
       width: 50%
     }
 
+    body {
+      background-color: #a4d0fb;
+    }
+
+    .card,
+    .logoBtn {
+      background-color: #e9f3fe;
+    }
+
     .imgCarta {
       object-fit: cover;
     }
@@ -153,8 +162,7 @@
 
   <header class="site-header sticky-top">
     <nav>
-      <!-- <div class="container-fluid "> -->
-      <div class="row align-items-center">
+      <div class="row align-items-center logoBtn">
         <div class="col">
           <div class="d-flex align-content-center my-auto">
 
