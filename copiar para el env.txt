@@ -1,0 +1,12 @@
+Tienen que reemplazar su conexion de mysql por la de ustedes
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=dbapp
+
+el script va a crear una bd que se llama dbapp así que dejen eso así no más
+
+a la página pueden entrar con el correo a@a.com pass:123456
+
+Ni ahí con hacer migraciones porque no tenía tiempo xDDDDDDDD, pal otro sprint lo hacemos
