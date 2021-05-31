@@ -7,8 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.83.1">
-    <title>Ejercicio Landing Page</title>
+  <title>7enScan</title>
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
@@ -16,6 +17,25 @@
 
 
     <style>
+    .imgLogo {
+      width: 50%
+    }
+
+    body {
+      background-color: #a4d0fb;
+    }
+
+    .card,
+    .logoBtn {
+      background-color: #e9f3fe;
+    }
+
+    .imgCarta {
+      object-fit: cover;
+    }
+
+
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -24,11 +44,37 @@
         user-select: none;
       }
 
+    @media (min-width: 576px) {
+      .imgLogo {
+        width: 50%
+      }
+    }
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
+
+      }
+
+      .imgLogo {
+        width: 40%
         }
       }
+
+    @media (min-width: 992px) {
+      .imgLogo {
+        width: 30%
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .imgLogo {
+        width: 20%
+      }
+    }
+
+    @media (min-width: 1400px) {}
+
 
       .container {
     max-width: 960px;
@@ -94,6 +140,11 @@
   .flex-equal > * {
     flex: 1;
   }
+
+    nav {
+      background-color: #fff;
+    }
+
   @media (min-width: 768px) {
     .flex-md-equal > * {
       flex: 1;
@@ -104,70 +155,186 @@
   </head>
   <body>
     
-<header class="site-header sticky-top py-1">
-  <nav class="container d-flex flex-column flex-md-row justify-content-between">
-    <a class="py-2 d-none d-md-inline-block" href="#">Inicio</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Características</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Ingresa a la APP</a>
+  <header class="site-header sticky-top">
+    <nav>
+      <div class="row align-items-center logoBtn">
+        <div class="col">
+          <div class="d-flex align-content-center my-auto">
+
+            <img src="/images/Logo_Marca_real.png" alt="" class="d-inline-block align-text-top imgLogo align-self-center">
+
+
+          </div>
+        </div>
+        <div class="col" id='asdasd' style="float: right">
+          <div class="d-flex" style="float: right">
+            <a href="{{url('auth/login')}}">
+              <button type="button" class="btn btn-primary btn-success p-1 p-sm-2 p-md-3 m-2 btnLogin ms-auto"><strong>Ingresa aqui</strong></button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- </div> -->
   </nav>
 </header>
 
 <main>
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-normal">7enscan</h1>
-      <p class="lead fw-normal">La manera fácil y sencilla de digitalizar sus documentos y tenerlos disponibles en todo lugar</p>
-      <a class="btn btn-outline-secondary" href="#">Próximamente</a>
+    <!-- carrousel -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide d-none d-md-block" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="/images/logoarre.png" class="d-block w-50  mx-auto" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
     </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-  </div>
-
-  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Puedes almacenar tus contratos</h2>
-        <p class="lead">Ya no necesitarás andar con una carpeta en tu bolso.</p>
-        <div class="bg-light shadow-sm mx-auto" style="width: 50%; height: 300px; border-radius: 21px 21px 0 0;">
-          <img src="/images/doc1.png" class="img-fluid" alt="Documentos" style="margin-top:15px">
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="/images/Digitalización.png" class="d-block w-50  mx-auto" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-white">A SOLO UN CLICK!</h5>
+            <p class="text-white">Asi de facil sera acceder a tus documentos</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/images/Seguridad.png" class="d-block w-50  mx-auto" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-white">CON LA MAXIMA SEGURIDAD!</h5>
+            <p class="text-white">Ofrecemos los mas altos estandares de seguridad para tus documentos</p>
+          </div>
         </div>
       </div>
-      
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5">Seguridad</h2>
-        <p class="lead">Tus documentos quedarán protegidos para que nadie más los vea.</p>
+
+
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 d-flex">
+                <img src="/images/imagen1.jpg" alt="..." class="img-fluid imgCarta">
+  </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Puedes almacenar tus contratos</h5>
+                  <p class="card-text">Ya no necesitarás andar con una carpeta en tu bolso.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 d-flex">
+                <img src="/images/imagen2.jpg" alt="..." class="img-fluid imgCarta">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Seguridad</h5>
+                  <p class="card-text">Tus documentos quedarán protegidos para que nadie más los vea.</p>
+
+    </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-        <img src="/images/lock.png" class="img-fluid" alt="Protegido" style="width: 25%;margin-top:20px">
-      </div>
+    </div>
+
+    <!-- SCRUM TEAM -->
+    <div class="container">
+      <h1 class="display-4 text-center mt-5">SCRUM TEAM</h1>
+      <div class="row mb-5">
+        <div class="card-group">
+          <div class="card">
+            <img src="/images/camilo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Scrum Master</h5>
+              <p class="card-text">Camilo Valenzuela</p>
+
+            </div>
+          </div>
+          <div class="card">
+            <img src="/images/pablo.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Product Owner</h5>
+              <p class="card-text">Pablo Arce</p>
+
+            </div>
+          </div>
+          <div class="card">
+            <img src="/images/mariangel.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Desarrollo</h5>
+              <p class="card-text">Mariangel Mujica</p>
+
     </div>
   </div>
+          <div class="card">
+            <img src="/images/julio.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Desarrollo</h5>
+              <p class="card-text">Julio Vasquez</p>
 
+            </div>
+          </div>
+          <div class="card">
+            <img src="/images/tomas.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Desarrollo</h5>
+              <p class="card-text">Tomas Edwards</p>
 
-<footer class="container py-5">
-  <div class="row">
-    <div class="col-12 col-md">
-      <small class="d-block mb-3 text-muted">&copy; Unab–2021</small>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="col-6 col-md">
-      <h5>Recursos</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">Manual de usuario</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-md">
-      <h5>Acerca de nosotros</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">Equipo de trabajo</a></li>
-        <li><a class="link-secondary" href="#">Terminos de uso</a></li>
-      </ul>
-    </div>
-  </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+
+
+        <!-- Section: Text -->
+        <section class="mb-4">
+          <p>
+            7enscan es una aplicación web que permite subir documentación relacionada con contratos de arriendos de
+            viviendas y automóviles. Creado por alumnos de la UNAB para la empresa Patagonia Soft.
+          </p>
+        </section>
+        <!-- Section: Text -->
+
+
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-white" href="#">7enScan</a>
+      </div>
+      <!-- Copyright -->
 </footer>
+    <!-- Footer -->
 
 
   </body>
+
 </html>
