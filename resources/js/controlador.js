@@ -1,0 +1,3 @@
+function validarformulario(){
+    alert('hola')
+}
