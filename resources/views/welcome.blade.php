@@ -18,16 +18,23 @@
 
   <style>
     .imgLogo {
-      width: 50%
+      width: 50%;
+      margin: 5px 0px;
+
     }
 
     body {
-      background-color: #a4d0fb;
+      background-color: #ffffff;
     }
 
-    .card,
+    footer,
     .logoBtn {
-      background-color: #e9f3fe;
+      background-color: #003399;
+    }
+
+    .card {
+      background-color: #868586;
+      color: #ffffff;
     }
 
     .imgCarta {
@@ -136,7 +143,7 @@
       background-color: #e5e5e5;
     }
 
-
+    x
     /*
    * Extra utilities
    */
@@ -146,7 +153,7 @@
     }
 
     nav {
-      background-color: #fff;
+      background-color: #003399 !Important;
     }
 
     @media (min-width: 768px) {
@@ -166,14 +173,15 @@
         <div class="col">
           <div class="d-flex align-content-center my-auto">
 
-            <img src="/images/Logo_Marca_real.png" alt="" class="d-inline-block align-text-top imgLogo align-self-center">
+            <img src="/images/logoblanco.png" alt="" class="d-inline-block align-text-top imgLogo align-self-center">
 
 
           </div>
         </div>
         <div class="col">
           <div class="d-flex">
-            <button type="button" class="btn btn-primary btn-success p-1 p-sm-2 p-md-3 m-2 btnLogin ms-auto"><strong>Ingresa aqui</strong></button>
+            <button type="button" class="btn btn-light btn-outline-primary p-1 p-sm-2 p-md-3 m-2 btnLogin ms-auto"><strong>Ingresa
+                aqui</strong></button>
           </div>
         </div>
       </div>
@@ -222,37 +230,6 @@
       </button>
     </div>
 
-    <!-- cards info -->
-    <!-- <div class="container my-4">
-      <div class="row d-flex ">
-        <div class="col-6 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img src="/images/imagen1.jpg" class="card-img-top img-fluid" alt="...">
-            <div class="card-body">
-              <p class="card-text">
-              <h4>Puedes almacenar tus contratos</h4>
-              <hr>
-              <p>Ya no necesitarás andar con una carpeta en tu bolso.</p>
-              </p>
-            </div>
-
-          </div>
-        </div>
-        <div class="col-6 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-
-            <div class="card-body">
-              <p class="card-text">
-              <h4>Seguridad</h4>
-              <hr>
-              <p>Tus documentos quedarán protegidos para que nadie más los vea.</p>
-              </p>
-            </div>
-            <img src="/images/imagen2.jpg" class="card-img-top img-fluid" alt="...">
-          </div>
-        </div>
-      </div>
-
     </div> -->
     <div class="container my-4">
       <div class="row">
@@ -265,6 +242,7 @@
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Puedes almacenar tus contratos</h5>
+                  <hr>
                   <p class="card-text">Ya no necesitarás andar con una carpeta en tu bolso.</p>
 
                 </div>
@@ -281,6 +259,7 @@
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Seguridad</h5>
+                  <hr>
                   <p class="card-text">Tus documentos quedarán protegidos para que nadie más los vea.</p>
 
                 </div>
@@ -341,7 +320,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-center text-white">
+    <footer class="text-center text-white">
       <!-- Grid container -->
       <div class="container p-4">
 
