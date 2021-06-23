@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Contratos extends Migration
+class AddRutToContratosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,9 @@ class Contratos extends Migration
      */
     public function up()
     {
-        Schema::create('contratos', function(Blueprint $table){
-            $table->id('idcontrato');
-            $table->integer('tipocontrato');
-            $table->string('idusuario');
-            $table->text('observacion');
-            $table->text('ruta');
+        Schema::table('contratos', function (Blueprint $table) {
             $table->string('rut');
-            $table->timestamp('fechahora')->useCurrent();
+            //
         });
     }
 
@@ -31,6 +26,9 @@ class Contratos extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('contratos', function (Blueprint $table) {
+            //
+            $table->dropColumn('rut');
+        });
     }
 }

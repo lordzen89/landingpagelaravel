@@ -46,7 +46,7 @@ class MainController extends Controller
        
         $request->validate([
             'email'=>'required|email',
-            'password'=>'required|min:5|max:12'
+            'password'=>'required'
        ]);
         
        
@@ -55,16 +55,35 @@ class MainController extends Controller
         $userInfo = Admin::where('email','=', $request->email)->first();
         error_log($request->email);
         if(!$userInfo){
-            return back()->with('fail','No se reconoce su correo electrónico.');
+            return back()->with('correoinvalido','No se reconoce su correo electrónico.');
         }else{
-            //check password
+            if($userInfo->bloqueado){
+                    
+                return back()->with('bloqueado','Su cuenta ha sido bloqueada. Contacte al administrador para desbloquearla.');
+            }
             if(Hash::check($request->password, $userInfo->password)){
                 $request->session()->put('LoggedUser', $userInfo->id);
+
+                $userInfo->intentos = 0;
+                $save = $userInfo->save();
+
                 //return redirect('admin/dashboard');
                 return redirect('contratos');
 
             }else{
-                return back()->with('fail','Contraseña incorrecta.');
+
+                
+                $userInfo->intentos =  $userInfo->intentos + 1;
+                $save = $userInfo->save();
+
+                if($userInfo->intentos == 3){
+                    $userInfo->bloqueado = true;
+                    $userInfo->save();
+                    return back()->with('bloqueado','Su cuenta ha sido bloqueada. Contacte al administrador para desbloquearla.');
+                }
+
+
+                return back()->with('passwordinvalida','Contraseña incorrecta.');
             }
         }  
 
