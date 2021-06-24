@@ -2,7 +2,7 @@
 @section('titulo', 'Registro de Contratos')
 @section('content')
 <div class="container" style="max-width: 75%; margin-top:10px">
-    <h1>Registro de Contrato</h1>
+    <h1>Registro de Documento</h1>
 <form>
     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -33,13 +33,13 @@
         </div>
       </div>
     <div class="mb-3">
-        <label for="rut" class="form-label">RUT asociado al contrato</label>
+        <label for="rut" class="form-label">RUT asociado al Documento</label>
         <input class="form-control" name="rut" id="rut" type="text" placeholder="Sin puntos con guión" aria-label="default input example">
       </div>
     <div class="mb-3">
-        <label for="tipocontrato" class="form-label">Tipo de Contrato</label>
+        <label for="tipocontrato" class="form-label">Tipo de Documento</label>
         <select class="form-select" aria-label="Default select example" name="tipocontrato" id="tipocontrato">
-            <option value="0" selected>Seleccione un tipo de contrato</option>
+            <option value="0" selected>Seleccione un tipo de Documento</option>
             <option value="1">Bien Raíz</option>
             <option value="2">Vehículo</option>
         </select>
@@ -83,7 +83,7 @@
             return;
         }
         if(document.getElementById('tipocontrato').value == 0){
-            document.getElementById('textomodal').innerHTML = "Debe seleccionar un Tipo de Contrato";
+            document.getElementById('textomodal').innerHTML = "Debe seleccionar un Tipo de Documento";
             $('#myModal').modal('show');
             return;
         }

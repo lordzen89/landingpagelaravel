@@ -1,7 +1,7 @@
 @extends('nav.nav')
-@section('titulo', 'Listado de Contratos')
+@section('titulo', 'Listado de Documento')
 @section('content')
-    <h1>Listado de contratos</h1>
+    <h1>Listado de Documento</h1>
     <div class="table-responsive">
     <table class="table table-success table-striped">
         <thead>

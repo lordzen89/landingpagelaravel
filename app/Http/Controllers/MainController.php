@@ -85,6 +85,7 @@ class MainController extends Controller
             $contrato = Contrato::select('contratos.idcontrato','contratos.rut' ,'tipocontrato.nombretipocontrato', 
                 'contratos.idusuario', 'contratos.observacion', 'contratos.ruta', 'contratos.fechahora')
                 ->join('tipocontrato','tipocontrato.idtipocontrato','=','contratos.tipocontrato' )
+                ->orderBy('contratos.idcontrato', 'ASC')
                 ->get();
             //error_log(print_r($data, TRUE));
             return view('contratos.index',  ['contrato' => $contrato, 'data' => $data]);

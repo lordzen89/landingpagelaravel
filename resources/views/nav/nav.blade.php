@@ -28,10 +28,10 @@
                 <a class="nav-link active" aria-current="page" href="{{url('/')}}">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{route('contratos')}}">Listado de Contratos</a>
+                <a class="nav-link" href="{{route('contratos')}}">Listado de Documentos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{route('contratos.crearcontrato')}}">Cargar Contrato</a>
+                <a class="nav-link" href="{{route('contratos.crearcontrato')}}">Cargar Documento</a>
               </li>
             </ul>
             <a href={{route('auth.logout')}}>

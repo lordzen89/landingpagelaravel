@@ -1,16 +1,16 @@
 @extends('nav.nav')
-@section('titulo', 'Listado de Contratos')
+@section('titulo', 'Listado de Documentos')
 @section('content')
     @isset($contrato)
     <div class="card">
         <div class="card-body">
-            <h1>Contrato N°{{$contrato[0]->idcontrato}}</h1><br>
-            <p>RUT asociado al Contrato: {{$contrato[0]->rut}}</p>
-            <p>Tipo de Contrato: {{$contrato[0]->nombretipocontrato}}</p>
+            <h1>Documento N°{{$contrato[0]->idcontrato}}</h1><br>
+            <p>RUT asociado al Documento: {{$contrato[0]->rut}}</p>
+            <p>Tipo de Documento: {{$contrato[0]->nombretipocontrato}}</p>
             <p>Observaciones: {{$contrato[0]->observacion}}</p>
             <p>Ingresado por: {{$contrato[0]->idusuario}}</p>
             <p>Fecha: {{$contrato[0]->fechahora}}</p>
-            <a href="{{asset('docs/test.pdf')}}" target="_blank" style="display:none" id="link">Para visualizar el contrato, haga clic aquí</a>
+            <a href="{{asset('docs/test.pdf')}}" target="_blank" style="display:none" id="link">Para visualizar el documento, haga clic aquí</a>
         </div>
       </div>
       <div class="card" style="margin-top:10px">

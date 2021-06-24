@@ -1,48 +1,57 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.83.1">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.83.1">
   <title>7enScan</title>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
-<meta name="theme-color" content="#7952b3">
+  <meta name="theme-color" content="#7952b3">
 
 
-    <style>
+  <style>
     .imgLogo {
-      width: 50%
+      width: 50%;
+      margin: 5px 0px;
+
     }
 
     body {
-      background-color: #a4d0fb;
+      background-color: #ffffff;
     }
 
-    .card,
+    footer,
     .logoBtn {
-      background-color: #e9f3fe;
+      background-color: #003399;
+    }
+
+    .card {
+      background-color: #868586;
+      color: #ffffff;
     }
 
     .imgCarta {
       object-fit: cover;
     }
 
+    /* .bntLogin {
+      margin-left: 20px;
+    } */
 
-
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
 
     @media (min-width: 576px) {
       .imgLogo {
@@ -50,16 +59,16 @@
       }
     }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
 
       }
 
       .imgLogo {
         width: 40%
-        }
       }
+    }
 
     @media (min-width: 992px) {
       .imgLogo {
@@ -76,92 +85,95 @@
     @media (min-width: 1400px) {}
 
 
-      .container {
-    max-width: 960px;
-  }
-  
-  /*
+    .container {
+      max-width: 960px;
+    }
+
+    /*
    * Custom translucent site header
    */
-  
-  .site-header {
-    background-color: rgba(0, 0, 0, .85);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-  }
-  .site-header a {
-    color: #8e8e8e;
-    transition: color .15s ease-in-out;
-  }
-  .site-header a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /*
+
+    .site-header {
+      background-color: rgba(0, 0, 0, .85);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+    }
+
+    .site-header a {
+      color: #8e8e8e;
+      transition: color .15s ease-in-out;
+    }
+
+    .site-header a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /*
    * Dummy devices (replace them with your own or something else entirely!)
    */
-  
-  .product-device {
-    position: absolute;
-    right: 10%;
-    bottom: -30%;
-    width: 300px;
-    height: 540px;
-    background-color: #333;
-    border-radius: 21px;
-    transform: rotate(30deg);
-  }
-  
-  .product-device::before {
-    position: absolute;
-    top: 10%;
-    right: 10px;
-    bottom: 10%;
-    left: 10px;
-    content: "";
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 5px;
-  }
-  
-  .product-device-2 {
-    top: -25%;
-    right: auto;
-    bottom: 0;
-    left: 5%;
-    background-color: #e5e5e5;
-  }
-  
-  
-  /*
+
+    .product-device {
+      position: absolute;
+      right: 10%;
+      bottom: -30%;
+      width: 300px;
+      height: 540px;
+      background-color: #333;
+      border-radius: 21px;
+      transform: rotate(30deg);
+    }
+
+    .product-device::before {
+      position: absolute;
+      top: 10%;
+      right: 10px;
+      bottom: 10%;
+      left: 10px;
+      content: "";
+      background-color: rgba(255, 255, 255, .1);
+      border-radius: 5px;
+    }
+
+    .product-device-2 {
+      top: -25%;
+      right: auto;
+      bottom: 0;
+      left: 5%;
+      background-color: #e5e5e5;
+    }
+
+    x
+    /*
    * Extra utilities
    */
-  
-  .flex-equal > * {
-    flex: 1;
-  }
 
-    nav {
-      background-color: #fff;
-    }
-
-  @media (min-width: 768px) {
-    .flex-md-equal > * {
+    .flex-equal>* {
       flex: 1;
     }
-  }
-    </style>
 
-  </head>
-  <body>
-    
+    nav {
+      background-color: #003399 !Important;
+    }
+
+    @media (min-width: 768px) {
+      .flex-md-equal>* {
+        flex: 1;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
   <header class="site-header sticky-top">
     <nav>
       <div class="row align-items-center logoBtn">
         <div class="col">
           <div class="d-flex align-content-center my-auto">
 
-            <img src="/images/Logo_Marca_real.png" alt="" class="d-inline-block align-text-top imgLogo align-self-center">
+            <img src="/images/logoblanco.png" alt="" class="d-inline-block align-text-top imgLogo align-self-center">
 
 
           </div>
@@ -169,7 +181,8 @@
         <div class="col" id='asdasd' style="float: right">
           <div class="d-flex" style="float: right">
             <a href="{{url('auth/login')}}">
-              <button type="button" class="btn btn-primary btn-success p-1 p-sm-2 p-md-3 m-2 btnLogin ms-auto"><strong>Ingresa aqui</strong></button>
+            <button type="button" class="btn btn-light btn-outline-primary p-1 p-sm-2 p-md-3 m-2 btnLogin ms-auto"><strong>Ingresa
+                aqui</strong></button>
             </a>
           </div>
         </div>
@@ -177,10 +190,10 @@
 
 
       <!-- </div> -->
-  </nav>
-</header>
+    </nav>
+  </header>
 
-<main>
+  <main>
     <!-- carrousel -->
     <div id="carouselExampleDark" class="carousel carousel-dark slide d-none d-md-block" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -193,7 +206,7 @@
           <img src="/images/logoarre.png" class="d-block w-50  mx-auto" alt="...">
           <div class="carousel-caption d-none d-md-block">
           </div>
-    </div>
+        </div>
         <div class="carousel-item" data-bs-interval="2000">
           <img src="/images/Digitalización.png" class="d-block w-50  mx-auto" alt="...">
           <div class="carousel-caption d-none d-md-block">
@@ -219,7 +232,7 @@
       </button>
     </div>
 
-
+    </div> -->
     <div class="container my-4">
       <div class="row">
         <div class="col-12 col-sm-6">
@@ -227,10 +240,11 @@
             <div class="row g-0">
               <div class="col-md-4 d-flex">
                 <img src="/images/imagen1.jpg" alt="..." class="img-fluid imgCarta">
-  </div>
+              </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Puedes almacenar tus contratos</h5>
+                  <hr>
                   <p class="card-text">Ya no necesitarás andar con una carpeta en tu bolso.</p>
 
                 </div>
@@ -247,9 +261,10 @@
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Seguridad</h5>
+                  <hr>
                   <p class="card-text">Tus documentos quedarán protegidos para que nadie más los vea.</p>
 
-    </div>
+                </div>
               </div>
             </div>
           </div>
@@ -284,8 +299,8 @@
               <h5 class="card-title">Desarrollo</h5>
               <p class="card-text">Mariangel Mujica</p>
 
-    </div>
-  </div>
+            </div>
+          </div>
           <div class="card">
             <img src="/images/julio.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -307,7 +322,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-center text-white">
+    <footer class="text-center text-white">
       <!-- Grid container -->
       <div class="container p-4">
 
@@ -331,10 +346,10 @@
         <a class="text-white" href="#">7enScan</a>
       </div>
       <!-- Copyright -->
-</footer>
+    </footer>
     <!-- Footer -->
 
 
-  </body>
+</body>
 
 </html>
