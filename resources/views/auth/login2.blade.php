@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="{{ asset('boostrap/bootstrap-4.3.1-dist/css/bootstrap.min.css') }}">
     <style>
       body {
-        background-color: #a4d0fb;
+        background-color: #25274D;
       }
 
       .site-container{
