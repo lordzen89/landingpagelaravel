@@ -41,7 +41,8 @@
             <div class="mb-3 form-check">
 
             </div class=''>
-            <button type="submit" class="btn btn-primary mx-3 float-end">Ingresar</button>
+            <button type="button" class="btn btn-light mx-3 float-end" data-mdb-ripple-color="dark">Ingresar</button>
+           
         </form>
         <div class="imgLogo mt-4 d-flex justify-content-center">
             <img class="img-fluid" src="/images/logo.png" alt="">
