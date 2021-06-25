@@ -27,10 +27,10 @@
     <div class="container px-1">
       
         
-        <div class="h3 p-3 text-center my-4 bg text-light border border-light">Digitalizador de documentos</div>
+        <div class="h3 p-3 text-center my-4 bg-secondary text-light border border-light">Digitalizador de documentos</div>
             
             <div class="h4 p-3 mb-4 bg-light border border-light text-dark">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <label for="exampleInputEmail1" class="form-label">E-mail</label>
                 <input type="email"  name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 <span class="text-danger">@error('email'){{ $message }}<br> @enderror </span>
                 <div id="emailHelp" class="form-text"></div>
@@ -44,7 +44,7 @@
                        form-check" >
 
             </div class=''>
-            <button type="button" class="btn btn-secondary mx-5 float-end" data-mdb-ripple-color="dark">Ingresar</button>
+            <button type="button" class="btn btn-secondary mx-5 float-end btn-lg" data-mdb-ripple-color="dark">Ingresar</button>
            
         </form>
         <div class="imgLogo mt-4 d-flex justify-content-center">
