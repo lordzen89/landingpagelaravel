@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <title>Digitalizador de documentos</title>
+    <title><span class="">Digitalizador de documentos</span></title>
     <style>
         body {
             background-color: #25274D;
@@ -24,24 +24,27 @@
         </div>
         @endif
         @csrf
-    <div class="container px-4">
-        <div class="h2 text-center my-4">Digitalizador de documentos</div>
+    <div class="container px-1">
+      
+        
+        <div class="h3 p-3 text-center my-4 bg-light text-dark border border-light">Digitalizador de documentos</div>
             
-            <div class="mb-3">
+            <div class="h4 p-3 mb-4 bg-light border border-light text-dark">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
                 <input type="email"  name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 <span class="text-danger">@error('email'){{ $message }}<br> @enderror </span>
                 <div id="emailHelp" class="form-text"></div>
             </div>
-            <div class="mb-3">
+            <div class="h4 p-3 mb-4 bg-light text-dark border border-light">
                 <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                 <input name="password" type="password" class="form-control" id="exampleInputPassword1">
                 <span class="text-danger">@error('password'){{ $message }} @enderror</span>
             </div>
-            <div class="mb-3 form-check">
+            <div class="mb-1
+                       form-check" >
 
             </div class=''>
-            <button type="button" class="btn btn-light mx-3 float-end" data-mdb-ripple-color="dark">Ingresar</button>
+            <button type="button" class="btn btn-light mx-5 float-end" data-mdb-ripple-color="dark">Ingresar</button>
            
         </form>
         <div class="imgLogo mt-4 d-flex justify-content-center">
