@@ -11,12 +11,12 @@
 </head>
 <style>
      body {
-        background-color: #a4d0fb;
+        background-color: #25274D;
       }
     </style>
 <body>
  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar nav-tabs navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">7Scan</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,7 @@
               </li>
             </ul>
             <a href={{route('auth.logout')}}>
-            <button class="btn btn-outline-success" type="button">Salir</button>
+            <button class="btn btn-secondary btn-lg" type="button">Salir</button>
             </a>
           </div>
         </div>
