@@ -20,7 +20,7 @@
 </div>
 <div class="card">
   <div class="card-body">
-    <h5 class="card-title">Patagonia Software</h5>
+    <h5 class="card-title"> <p class="font-weight-bold">SOFTPatagonia</p></h5>
     <p class="card-text"> </p>
    
   </div>
