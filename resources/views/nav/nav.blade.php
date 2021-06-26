@@ -16,6 +16,16 @@
     </style>
 <body>
  
+  <div class="card mb-3">
+</div>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Patagonia Software</h5>
+    <p class="card-text"> </p>
+   
+  </div>
+  <img class="card-img-bottom" src="..." alt="Card image cap">
+</div>
     <nav class="navbar nav-tabs navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">7Scan</a>
