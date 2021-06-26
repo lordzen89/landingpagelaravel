@@ -27,7 +27,7 @@
     <div class="container px-1">
       
         
-        <div class="h3 p-3 text-center my-4 bg-secondary text-light border border-light">Digitalizador de documentos</div>
+        <div class="h3 p-3 text-center my-4 bg text-light border border-light">Digitalizador de documentos</div>
             
             <div class="h4 p-3 mb-4 bg-light border border-light text-dark">
                 <label for="exampleInputEmail1" class="form-label">E-mail</label>
