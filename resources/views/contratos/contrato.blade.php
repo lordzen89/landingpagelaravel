@@ -2,17 +2,51 @@
 @section('titulo', 'Listado de Contratos')
 @section('content')
     @isset($contrato)
-    <div class="card">
-        <div class="card-body">
-            <h1>Contrato N°{{$contrato[0]->idcontrato}}</h1><br>
-            <p>RUT asociado al Contrato: {{$contrato[0]->rut}}</p>
-            <p>Tipo de Contrato: {{$contrato[0]->nombretipocontrato}}</p>
-            <p>Observaciones: {{$contrato[0]->observacion}}</p>
-            <p>Ingresado por: {{$contrato[0]->idusuario}}</p>
-            <p>Fecha: {{$contrato[0]->fechahora}}</p>
-            <a href="{{asset('docs/test.pdf')}}" target="_blank" style="display:none" id="link">Para visualizar el contrato, haga clic aquí</a>
+  
+      <div class="card" style="width: 100%;">
+  <div class="card-header">
+  <h1 class="display-1 text-center">Contrato N°{{$contrato[0]->idcontrato}}</h1>
+  </div>
+ <div class="container p-4">
+ <ul class="list-group list-group-flush">
+    <li class="list-group-item"><div class="row">
+        <div class="col col-lg-4"><h5 class="d-inline m-2"> <i class="fas fa-address-card mx-2"></i>RUT asociado: </h5></div>
+        <div class="col-12 col-sm-5  my-2 d-flex d-sm-inline justify-content-center"><em>{{$contrato[0]->rut}}</em></div>
+    </div>
+        </li>
+    <li class="list-group-item"><div class="row">
+        <div class="col col-lg-4"> <h5 class="d-inline m-2"><i class="fas fa-check-square mx-2"></i> Tipo de Contrato: </h5></div>
+        <div class="col-12 col-sm-5 col-lg-4 my-2 d-flex d-sm-inline justify-content-center"> <em> {{$contrato[0]->nombretipocontrato}}</em></div>
+    </div>     
+ </li>
+    <li class="list-group-item">
+     <div class="row">
+         <div class="col col-lg-4"> <h5 class="d-inline m-2"><i class="fas fa-check-square mx-2"></i> Observaciones: </h5></div>
+         <div class="col-12 col-sm-5 col-lg-4 my-2 d-flex d-sm-inline justify-content-center"><em>{{$contrato[0]->observacion}}</em></div>
+     </div>   
+   </li>
+    <li class="list-group-item"><div class="row">
+        <div class="col col-lg-4"><h5 class="d-inline m-2"><i class="fas fa-check-square mx-2"></i> Ingresado por: </h5></div>
+        <div class="col-12 col-sm-5 col-lg-4 my-2 d-flex d-sm-inline justify-content-center"><em>{{$contrato[0]->idusuario}}</em></div>
+    </div>
+        </li>
+    <li class="list-group-item">
+        <div class="row">
+            <div class="col col-lg-4"><h5 class="d-inline m-2"><i class="fas fa-check-square mx-2"></i> Fecha ingreso: </h5></div>
+            <div class="col-12 col-sm-5 col-lg-4 my-2 d-flex d-sm-inline justify-content-center"> <em>{{$contrato[0]->fechahora}}</em></div>
         </div>
-      </div>
+   </li>
+  </ul>
+ </div>
+ 
+  <div class="btnes m-4 text-end">
+  <button type="button" class="btn btn-primary mx-1 px-4">Guardar</button>
+  <button type="button" class="btn btn-danger px-5 mx-1"><i class="far fa-trash-alt"></i></button>
+  </div>
+</div>
+<!-- <div id="link" class="text-center mt-3 mb-3 p-3 mb-2 bg-primary bg-gradient text-white "> -->
+    <a class="text-white text-decoration-none bg-image hover-zoom " href="{{asset('docs/test.pdf')}}" target="_blank" style="display:none" id="link">Para visualizar el contrato, haga clic aquí</a>
+<!-- </div> -->
       <div class="card" style="margin-top:10px">
         <div class="card-body">
     <div>
