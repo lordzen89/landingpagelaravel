@@ -11,12 +11,22 @@
 </head>
 <style>
      body {
-        background-color: #a4d0fb;
+        background-color: #25274D;
       }
     </style>
 <body>
  
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="card mb-3">
+</div>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title"> <p class="font-weight-bold">SOFTPatagonia</p></h5>
+    <p class="card-text"> </p>
+   
+  </div>
+  <img class="card-img-bottom" src="..." alt="Card image cap">
+</div>
+    <nav class="navbar nav-tabs navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">7Scan</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +45,7 @@
               </li>
             </ul>
             <a href={{route('auth.logout')}}>
-            <button class="btn btn-outline-success" type="button">Salir</button>
+            <button class="btn btn-secondary btn-lg" type="button">Salir</button>
             </a>
           </div>
         </div>
