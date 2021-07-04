@@ -15,7 +15,7 @@
           </tr>
         </thead>
         <tbody>
-          
+   
     @foreach ($contrato as $item)
     <tr>
         <th scope="row"><a href="{{url('/contratos/'.$item->idcontrato)}}">{{$item->idcontrato}}</a></th>

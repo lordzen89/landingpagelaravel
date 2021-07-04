@@ -106,6 +106,7 @@ class MainController extends Controller
                 ->join('tipocontrato','tipocontrato.idtipocontrato','=','contratos.tipocontrato' )
                 ->get();
             //error_log(print_r($data, TRUE));
+            // return $contrato;
             return view('contratos.index',  ['contrato' => $contrato, 'data' => $data]);
         }
         else{
