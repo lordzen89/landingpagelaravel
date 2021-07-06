@@ -1,0 +1,13 @@
+@extends('nav.nav')
+@section('titulo', 'Previsualizacion de Documento')
+@section('content')
+    <h1>Listado de Documento</h1>
+    <div class="table-responsive">
+    <p>{{$info['rut']}}</p>
+    <p>{{$info['tipocontrato']}}</p>
+    <p>{{$info['observacion']}}</p>
+    <p>|{{$respuesta}}|</p>
+    <br>
+    <a href="{{$linkpdf}}">Link</a>
+{{var_dump($respuesta)}}
+@endsection
